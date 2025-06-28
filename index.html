@@ -1,42 +1,83 @@
-<!-- AkhilNews - Static Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - AkhilNews</title>
+  <title>Home - AkhilNews - Latest Tech & Global News</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .hero {
+      background: linear-gradient(to right, #001f3f, #003366);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .articles {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 10px auto;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      color: #001f3f;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <img src="logo.png" alt="AkhilNews Logo" class="logo"/>
-      <div class="title-box">
-        <h1>AkhilNews</h1>
-        <p>Your Source for News & Tech</p>
-      </div>
-    </div>
-  </header>
-  
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="tech.html">Tech</a></li>
-    <li><a href="news.html">News</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
 
-  <main>
-    <section class="articles">
-      <article>
-        <h2>Welcome to AkhilNews!</h2>
-        <p>This is your first post. You can edit this HTML to add real news or tech content here. This section will show your latest articles.</p>
-      </article>
-    </section>
+  <header class="hero">
+    <img src="logo.png" alt="AkhilNews Logo" width="100" style="border-radius: 50%; margin-bottom: 10px;" />
+    <h1>Welcome to AkhilNews</h1>
+    <p>Your Daily Source for Latest Tech Trends & Global Headlines</p>
+  </header>
+
+  <nav style="background: #003366; padding: 10px;">
+    <a href="index.html" style="color: white; margin: 10px;">Home</a>
+    <a href="tech.html" style="color: white; margin: 10px;">Tech</a>
+    <a href="news.html" style="color: white; margin: 10px;">News</a>
+    <a href="about.html" style="color: white; margin: 10px;">About</a>
+  </nav>
+
+  <main class="articles">
+    <div class="card">
+      <h2>🚀 Top Story: AI Changing the World</h2>
+      <p>Explore how artificial intelligence is revolutionizing industries in 2025 — from healthcare to space tech!</p>
+    </div>
+
+    <div class="card">
+      <h2>🌐 Breaking: India Launches 6G Pilot</h2>
+      <p>India's 6G test network is live — what it means for you and the future of internet speed.</p>
+    </div>
   </main>
-  <footer>
-    <p>&copy; 2025 AkhilNews | Made with ❤️ by Akhil</p>
+
+  <footer style="background: #001f3f; color: white; padding: 20px; text-align: center;">
+    © 2025 TeckNews | Made with ❤️ by Akhil
   </footer>
+
 </body>
 </html>
